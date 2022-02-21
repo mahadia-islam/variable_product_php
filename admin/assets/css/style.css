@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin .upper_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 735px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px 0;
+}
+
+.admin .upper_block h3 {
+  color: #001c29;
+}
+
+.admin .upper_block a {
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #001c29;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.admin .table thead {
+  background-color: #001c29;
+  color: #fff;
+}
+
+.admin .table thead th {
+  padding: 10px 25px;
+  text-transform: uppercase;
+}
+
+.admin .table tbody tr:nth-child(odd) {
+  background-color: #e9e9e9;
+  color: #001c29;
+}
+
+.admin .table tbody tr:nth-child(even) {
+  background-color: #001c29;
+  color: #fff;
+}
+
+.admin .table tbody tr td {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+  font-family: 'Open sans',sans-serif;
+  font-weight: 600;
+}
+
+.admin .table tbody tr td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.admin .table tbody tr td div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admin .table tbody tr td div a {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: royalblue;
+  text-decoration: none;
+}
+
+.add_product {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.add_product form {
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #001c29;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.add_product form label, .add_product form input, .add_product form textarea, .add_product form select {
+  width: 100% !important;
+}
+
+.add_product form label {
+  color: #001c29;
+  font-weight: 600;
+}
+
+.add_product form label span {
+  color: crimson;
+}
+
+.add_product form input, .add_product form textarea, .add_product form select {
+  padding: 10px 20px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #001c29;
+  border-radius: 10px;
+  outline: none !important;
+  color: #001c29;
+  font-weight: 600;
+}
+
+.add_product form input[type="file"]::-webkit-file-upload-button {
+  background-color: #001c29;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Open sans',sans-serif;
+}
+
+.add_product form button {
+  padding: 10px 15px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #001c29;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.add_product form .image_preview img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans',sans-serif;
+    box-sizing: border-box;
+}
+
+.admin{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .upper_block{
+        display: flex;
+        width: 735px;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 0;
+        h3{
+            color: rgb(0, 28, 41);
+        }
+        a{
+            padding: 10px 25px;
+            text-decoration: none;
+            color: #fff;
+            background-color: rgb(0, 28, 41);
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+    }
+    .table{
+        thead{
+            background-color: rgb(0, 28, 41);
+            color: #fff;
+            th{
+                padding: 10px 25px;
+                text-transform: uppercase;
+            }
+        }
+        tbody{
+            tr{
+                &:nth-child(odd){
+                    background-color: rgb(233, 233, 233);
+                    color: rgb(0, 28, 41);
+                }
+                &:nth-child(even){
+                    background-color: rgb(0, 28, 41);
+                    color: #fff;
+                }
+                td{
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 10px 0;
+                    font-family: 'Open sans',sans-serif;
+                    font-weight: 600;
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                    }
+                    div{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        a{
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: transparent;
+                            border: none;
+                            cursor: pointer;
+                            color: royalblue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// add product
+
+.add_product{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form{
+        max-width: 500px;
+        width: 100%;
+        border: 1px solid rgb(0, 28, 41);
+        padding: 20px;
+        border-radius: 10px;
+        label,input,textarea,select{
+            width: 100% !important;
+        }
+        label{
+            color: rgb(0, 28, 41);
+            font-weight: 600;
+            span{
+                color: crimson;
+            }
+        }
+        input,textarea,select{
+            padding: 10px 20px;
+            margin: 10px 0 20px 0;
+            border: 1px solid rgb(0, 28, 41);
+            border-radius: 10px;
+            outline: none !important;
+            color: rgb(0, 28, 41);
+            font-weight: 600;
+        }
+        input[type="file"]::-webkit-file-upload-button{
+            background-color: rgb(0, 28, 41);
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            font-family: 'Open sans',sans-serif;
+        }
+        button{
+            padding: 10px 15px;
+            color: #fff;
+            font-weight: 600;
+            background-color: rgb(0, 28, 41);
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .image_preview{
+            img{
+                width: 60px;
+                height: 60px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
